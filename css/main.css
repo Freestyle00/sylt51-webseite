@@ -1,3 +1,4 @@
+/*
 @font-face 
 {
     font-family: "blocky";
@@ -18,3 +19,104 @@ a { color: red}
 img[alt="logo"] { border-radius: 35%; }
 
 img { box-shadow: 0 0 20px 0px rgb(108, 108, 108); }
+*/
+
+@font-face {
+    font-family: "blocky";
+    src: url("../fonts/BlockyFont/bloky.TTF") format("truetype");
+}
+
+body, h1, h2, h3, h4, p, a
+{
+    font-family: "blocky";
+    text-shadow: 0.25rem 0.25rem rgba(40, 100, 150, 0.8);
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+h3 {
+    font-size: 2rem;
+}
+
+.wrapper{
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    width: 80vw;
+    margin: 1rem auto;
+}
+
+img {
+    box-shadow: 0 0 1rem 0px rgba(20, 50, 75, 0.5);
+}
+
+#logo {
+    width: 8vw;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    border-radius: 35%;
+    box-shadow: 0 0 0.5rem 0px rgba(255, 0, 0, 0.8);
+}
+
+.seperator {
+    width: 100%;
+    height: 0.25rem;
+    border-radius: 1rem;
+    background-color: black;
+    box-shadow:0 0 0.5rem 0.5rem rgba(40, 100, 150, 1);
+    margin: 1rem 0;
+}
+
+.section{
+    margin: 1rem 0.5rem 0 0.5rem;
+    padding: 0.5rem;
+}
+.imageGrid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+.imageGrid > img, video {
+    width: 100%;
+    aspect-ratio: 9/16;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+#gruppenfoto > img {
+    width: 80%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#rohr > img, video {
+    aspect-ratio: 1 / 2;
+}
+
+#gurppenfotoList {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#gurppenfotoList > img {
+    width: 80%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 0.5rem;
+}
